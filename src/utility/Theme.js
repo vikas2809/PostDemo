@@ -1,0 +1,11 @@
+export const COLOR_CODES = {
+    HEADER_COLOR: '#2A81C7',
+    WHITE: '#FFFFFF',
+    GRAY_SCALE: '#CED0CE',
+    GRAY_SHADE: '#AEAEAE',
+    MELON: '#FFB7AA',
+    BITTERSWEET: '#FF816D',
+    BLUE: '#428AF8',
+    LIGHT_GRAY: '#D3D3D3',
+    BRIGHT_GREY: '#58595b',
+}
