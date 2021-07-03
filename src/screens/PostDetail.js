@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
     ScrollView, StyleSheet, TextInput
 } from 'react-native';
-
+import Loader from 'App/src/components/loader/Loader';
 import Button from 'App/src/components/button/Button';
 import CustomInput from 'App/src/components/input/CustomInput';
 import { showAlert } from 'App/src/utility/Utility';
@@ -46,9 +46,10 @@ export default class PostDetail extends Component {
     _onChangeText = text => this.setState({ post: text })
 
     render() {
-        const { isFocussed, height } = this.state;
+        const { isFocussed, height, isLoading } = this.state;
         return (
             <ScrollView style={{ flex: 1, marginBottom: 20 }}>
+                <Loader loading={isLoading} />
                 <CustomInput
                     isFocussed={isFocussed}
                     height={height}
